@@ -19,29 +19,7 @@ The goal was to collect Windows Event Logs and send them to Splunk for monitorin
 
 ## Architecture
 
-Windows Endpoint
-        │
-        ▼
-Windows Event Logs + Sysmon
-        │
-        ▼
-Splunk Universal Forwarder
-        │
-        ▼
-TCP Port 9997
-        │
-        ▼
-Splunk Enterprise SIEM
-        │
-        ▼
-Security Monitoring
-• Search & Reporting
-• Dashboards
-• Alerts
-• SPL Queries
-• Threat Detection
-• Log Analysis
-• Incident Investigation
+Windows Endpoint ---> Windows Event Logs + Sysmon --- >Splunk Universal Forwarder ---> TCP Port 9997 ---> Splunk Enterprise SIEM ---> Security Monitoring
 
 ### Architecture Diagram
 
