@@ -231,6 +231,18 @@ The successful ingestion of Sysmon logs provides enhanced endpoint telemetry for
 ### Windows Security Logs
 ![Windows Security Logs](screenshots/04-security-logs.png)
 
+### Sysmon Events
+
+Sysmon events successfully collected and indexed in Splunk.
+
+SPL Query:
+
+```spl
+index=sysmon
+```
+
+
+
 ### Failed Login Detection
 ![Failed Login Detection](screenshots/05-failed-logins-detection.png)
 
@@ -261,6 +273,18 @@ The successful ingestion of Sysmon logs provides enhanced endpoint telemetry for
 ---
 
 ## Detection Use Cases
+
+### Sysmon Event Monitoring
+
+SPL Query:
+
+```spl
+index=sysmon
+```
+
+Purpose:
+
+Monitor endpoint telemetry collected by Microsoft Sysmon, including process creation, network connections, registry modifications, image loads, and other security-relevant system activity.
 
 ### Failed Login Detection
 
